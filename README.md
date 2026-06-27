@@ -16,16 +16,12 @@ Hardware Expansion Support: The codebase includes integrated support for an HC-S
 
 Hardware Pinout Configuration
 
-Based on the source code configuration in `sketch_may19a.ino`, wire your components to the Arduino Uno using the following pin mapping:
-
-| Component | Arduino Uno Pin | Description |
-| IR Receiver Signal| Pin 3 | Infrared sensor input for remote commands |
-| Motor Pin 1| Pin 5 | Custom motor driver control pin 1 |
-| Motor Pin 2 | Pin 2 | Custom motor driver control pin 2 |
-| Motor Pin 3 | Pin 4 | Custom motor driver control pin 3 |
-| Motor Pin 4 | Pin 6 | Custom motor driver control pin 4 |
-| LED Matrix SCL | Pin A5 | I2C Clock line for the 8x16 display module |
-| LED Matrix SDA | Pin A4 | I2C Data line for the 8x16 display module |
+HCtrig_pin = YOUR_TRIG_PIN
+HCecho_pin = YOUR_ECHO_PIN 
+IRrecv_Pin = YOUR_IR_SENSOR_PIN
+#define SCL_Pin    YOUR_DISPLAY_CLOCK_PIN   
+#define SDA_Pin    YOUR_DISPLAY_DATA_PIN  
+car_motors motors(, , , );  //set pins of your motors
 
 ---
 

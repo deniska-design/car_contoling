@@ -1,4 +1,5 @@
 #include <IRremote.hpp>
+#include "Display.h"
 #include "Car_motors.h"
 
 #define SCL_Pin    A5  //Set clock pin to A5

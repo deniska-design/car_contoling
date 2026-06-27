@@ -16,12 +16,14 @@ Hardware Expansion Support: The codebase includes integrated support for an HC-S
 
 Hardware Pinout Configuration:
 
+```
 HCtrig_pin = YOUR_TRIG_PIN
 HCecho_pin = YOUR_ECHO_PIN 
 IRrecv_Pin = YOUR_IR_SENSOR_PIN
 #define SCL_Pin    YOUR_DISPLAY_CLOCK_PIN   
 #define SDA_Pin    YOUR_DISPLAY_DATA_PIN  
 car_motors motors(, , , );  //set pins of your motors
+```
 
 ---
 

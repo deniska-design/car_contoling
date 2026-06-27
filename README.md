@@ -14,7 +14,7 @@ Hardware Expansion Support: The codebase includes integrated support for an HC-S
 
 ---
 
-Hardware Pinout Configuration
+Hardware Pinout Configuration:
 
 HCtrig_pin = YOUR_TRIG_PIN
 HCecho_pin = YOUR_ECHO_PIN 
@@ -25,7 +25,7 @@ car_motors motors(, , , );  //set pins of your motors
 
 ---
 
-Installation & Setup
+Installation & Setup:
 
 1. Clone the Repository
 Open your terminal or command prompt and run:
@@ -62,10 +62,11 @@ Click the Upload button.
 
 ---
 
-Usage
-(You can add your custom IR remote controller button layouts, hex codes like 0xC23D or 0x22DD, and operating instructions here)
+Execution:
+
+https://github.com/user-attachments/assets/9c3cabdb-6468-4d2a-9213-bb52d6fbe9cb
 
 ---
 
-License
+License:
 This project is open-source. Anyone is completely free to download, modify, use, and distribute this software for personal or educational purposes.

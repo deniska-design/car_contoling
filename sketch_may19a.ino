@@ -1,11 +1,9 @@
-#include "Servo.h"
 #include "IRremote.h"
 #include "Display.h"
 #include "Car_motors.h"
 
 #define SCL_Pin    A5  //Set clock pin to A5
 #define SDA_Pin    A4  //Set data pin to A4
-#define SERVO_Pin  A3  
 
 #define SIG_RIGHT   0xC23D  
 #define SIG_LEFT    0x22DD  
@@ -35,10 +33,7 @@ car_motors motors(5, 2, 4, 6);
 
 Display display(8, 16, SCL_Pin, SDA_Pin);
 
-Servo servo;                // create servo object to control a servo 
-
 IRrecv irrecv (IRrecv_Pin);             // порт IR Sencor
-
 
 float way[3];
 
@@ -77,5 +72,4 @@ void loop ()
     }
     irrecv.resume();                  //получаем опять сигнал
   }
-  
 } 

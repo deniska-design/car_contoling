@@ -1,7 +1,6 @@
 #include "Servo.h"
 #include "IRremote.h"
 #include "Display.h"
-#include "HC-SR04.h"
 #include "Car_motors.h"
 
 #define SCL_Pin    A5  //Set clock pin to A5
@@ -33,8 +32,6 @@ unsigned char bitmapArrowleft[] = {  0x00,   0x00,   0x00,   0x00,   0x00,   0x0
 unsigned char smile[] = { 0x00, 0x00, 0x1c, 0x02, 0x02, 0x02, 0x5c, 0x40, 0x40, 0x5c, 0x02, 0x02, 0x02, 0x1c, 0x00, 0x00 };
 
 car_motors motors(5, 2, 4, 6); 
-
-HCSRO4 hcsr04(HCtrig_pin, HCecho_pin);
 
 Display display(8, 16, SCL_Pin, SDA_Pin);
 

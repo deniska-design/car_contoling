@@ -6,24 +6,28 @@ An open-source Arduino Uno robotic car project controlled wirelessly via an Infr
 
 Features:
 
-IR Remote Steering: Control the car's direction (forward, left, right, and stop) wirelessly using a standard infrared remote control.
-Expressive LED Matrix Feedback (8x16): The car dynamically updates an I2C-driven LED matrix to show its status:
-Displays a friendly smiley face when moving straight or idling.
-Displays animated directional arrows indicating the exact turning path when steering left or right.
-Hardware Expansion Support: The codebase includes integrated support for an HC-SR04 ultrasonic distance sensor and a micro servo for obstacle avoidance tracking.
+* **IR Remote Steering:** Control the car's direction (forward, left, right, and stop) wirelessly using a standard infrared remote control.
+* **Expressive LED Matrix Feedback (8x16):** The car dynamically updates an I2C-driven LED matrix to show its status:
+  * Displays a friendly **smiley face** when moving straight or idling.
+  * Displays animated **directional arrows** indicating the exact turning path when steering left or right.
+* **Hardware Expansion Support:** The codebase includes integrated support for an HC-SR04 ultrasonic distance sensor and a micro servo for obstacle avoidance tracking.
 
 ---
 
 Hardware Pinout Configuration:
 
-```
-HCtrig_pin = YOUR_TRIG_PIN
-HCecho_pin = YOUR_ECHO_PIN 
-IRrecv_Pin = YOUR_IR_SENSOR_PIN
-#define SCL_Pin    YOUR_DISPLAY_CLOCK_PIN   
-#define SDA_Pin    YOUR_DISPLAY_DATA_PIN  
-car_motors motors(, , , );  //set pins of your motors
-```
+| Component | Arduino Uno Pin | Description |
+| :--- | :--- | :--- |
+| **IR Receiver Signal** | Pin 3 | Infrared sensor input for remote commands |
+| **Motor Pin 1** | Pin 5 | Custom motor driver control pin 1 |
+| **Motor Pin 2** | Pin 2 | Custom motor driver control pin 2 |
+| **Motor Pin 3** | Pin 4 | Custom motor driver control pin 3 |
+| **Motor Pin 4** | Pin 6 | Custom motor driver control pin 4 |
+| **LED Matrix SCL** | Pin A5 | I2C Clock line for the 8x16 display module |
+| **LED Matrix SDA** | Pin A4 | I2C Data line for the 8x16 display module |
+| **Servo Signal** | Pin A3 | Micro servo control pin |
+| **HC-SR04 Trigger** | Pin 12 | Ultrasonic sensor trigger output |
+| **HC-SR04 Echo** | Pin 13 | Ultrasonic sensor echo input |
 
 ---
 
